@@ -298,6 +298,7 @@ def get_list_of_items_from_port(vessel, port, items, **kwargs):
                             action,
                             time,
                             constraints=vessel.transit_limits,
+                            suspendable=True,
                             **kwargs,
                         )
 
@@ -422,5 +423,5 @@ def get_list_of_items_from_port_wait(vessel, port, items, **kwargs):
 
             if time > 0:
                 yield vessel.task(
-                    action, time, constraints=vessel.transit_limits, **kwargs
+                    action, time, constraints=vessel.transit_limits, suspendable=True, **kwargs
                 )

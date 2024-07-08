@@ -27,7 +27,7 @@
 # Monopiles
 "mono_embed_len": 30              # m
 "mono_drive_rate": 20             # m/hr
-"mono_fasten_time": 12            # hr
+"mono_fasten_time": 12            # hr 12
 "mono_release_time": 3            # hr
 "tp_fasten_time": 8               # hr
 "tp_release_time": 2              # hr
@@ -52,13 +52,13 @@
 "load_rocks_time": 4              # hr
 
 # Turbines
-"tower_section_fasten_time": 4    # hr, applies to all sections
+"tower_section_fasten_time": 9    # hr, applies to all sections 4
 "tower_section_release_time": 3   # hr, applies to all sections
 "tower_section_attach_time": 6    # hr, applies to all sections
-"nacelle_fasten_time": 4          # hr
+"nacelle_fasten_time": 9          # hr 4
 "nacelle_release_time": 3         # hr
 "nacelle_attach_time": 6          # hr
-"blade_fasten_time": 1.5          # hr
+"blade_fasten_time": 4          # hr  1.5
 "blade_release_time": 1           # hr
 "blade_attach_time": 3.5          # hr
 
