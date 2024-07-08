@@ -1,9 +1,9 @@
 blade:
-  deck_space: 480     # m^2
+  deck_space: 480     # m^2      ##### Reset all deck_space = 1 to avoid vessel constraints
   length: 120          # m
   type: Blade
-  mass: 72            # t
-hub_height: 150       # m
+  mass: 72         # t
+hub_height: 145       # m
 nacelle:
   deck_space: 242     # m^2
   type: Nacelle
@@ -15,6 +15,6 @@ tower:
   deck_space: 78.5      # m^2
   sections: 2         # n
   type: Tower
-  length: 150
+  length: 145
   mass: 480         # t
 turbine_rating: 15     # MW

@@ -1,5 +1,6 @@
+# Based on GE Haliade X
 blade:
-  deck_space: 385     # m^2
+  deck_space: 385     # m^2      ##### Reset all deck_space = 1 to avoid vessel constraints
   length: 107          # m
   type: Blade
   mass: 54         # t
@@ -10,7 +11,7 @@ nacelle:
   mass: 604         # t
 name: 12MW Generic Turbine
 rated_windspeed: 11   # m/s
-rotor_diameter: 215   # m
+rotor_diameter: 220   # m
 tower:
   deck_space: 50.24      # m^2
   sections: 2         # n

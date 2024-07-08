@@ -1,0 +1,69 @@
+site:
+  mean_windspeed: 9
+  distance: 50
+  depth: 45
+  distance_to_landfall: 50
+plant:
+  capacity: 600
+  turbine_rating: 15
+  num_turbines: 40
+turbine:
+  blade:
+    deck_space: 480     # m^2      ##### Reset all deck_space = 1 to avoid vessel constraints
+    length: 120          # m
+    type: Blade
+    mass: 72         # t
+  hub_height: 145       # m
+  nacelle:
+    deck_space: 242     # m^2
+    type: Nacelle
+    mass: 797         # t
+  name: 15MW Generic Turbine
+  rated_windspeed: 11   # m/s
+  rotor_diameter: 240   # m
+  tower:
+    deck_space: 78.5      # m^2
+    sections: 2         # n
+    type: Tower
+    length: 145
+    mass: 480         # t
+  turbine_rating: 15 
+landfall:
+  interconnection_distance: 3
+  trench_length: 2
+# Vessels
+array_cable_install_vessel: example_cable_lay_vessel
+export_cable_install_vessel: example_cable_lay_vessel
+export_cable_bury_vessel: example_cable_lay_vessel
+oss_install_vessel: example_heavy_lift_vessel
+spi_vessel: example_scour_protection_vessel
+wtiv: example_wtiv
+feeder: example_feeder
+num_feeders: 2
+# Module Specific
+OffshoreSubstationInstallation:
+  feeder: example_heavy_feeder
+  num_feeders: 1
+array_system_design:
+  cables:
+  - XLPE_185mm_66kV
+  - XLPE_630mm_66kV
+export_system_design:
+  cables: XLPE_1000mm_220kV
+  percent_added_length: 0.0
+scour_protection_design:
+  cost_per_tonne: 40
+  scour_protection_depth: 1
+jacket:
+  height: 70
+  deck_space: 750
+  mass: 1800
+  unit_cost: 100000
+  foundation_type: suction
+# Configured Phases
+design_phases:
+- MonopileDesign
+install_phases:
+- MonopileInstallation
+- TurbineInstallation
+
