@@ -62,8 +62,8 @@ jacket:
   foundation_type: suction
 # Configured Phases
 design_phases:
-- MonopileDesign
+- JacketDesign
 install_phases:
-- MonopileInstallation
-- TurbineInstallation
+- JacketInstallation
+- JacketInstallation
 
